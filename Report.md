@@ -54,6 +54,8 @@ The below graph shows the results of the final model training. X axis is step va
 
 <b> The model reached an average score of 13 after traing for 400 episodes on the hyper-parameters chosen above  </b>
 ![Average scores output](media/results_magic-violet-19.png)
-![Average scores output matplotlib](media/Screen Shot 2022-08-30 at 10.27.08 PM.png)
+![Average scores output matplotlib](media/matplotilb_scores.png)
+
+
 
 ![Weights and Biases model config page](media/wandb_output.png)
