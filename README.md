@@ -26,7 +26,8 @@
     ```
 
 
-# 3. Training 
+# 3. Training - 
+### This runs without Weights and Biases. Use the jupyter notebook for weights and biases, but you will need to login and config wandb yourself
 ```
 python3 Navigation_Training.py
 ```
