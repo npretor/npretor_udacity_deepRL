@@ -24,7 +24,7 @@ Final choices for hyperparameters:
 - Update_every:       4
 - Epsilon_start:      1.0
 - Epsilon_end:        0.01
-- Epsilon_decay:      
+- Epsilon_decay:      0.95
 
 
 ### Learning rate
@@ -50,4 +50,4 @@ The epsilon value determines the balance between exploring a new action, and sta
 
 ## Goal
 The environment is considered to be solved when over a period of a hundred episodes the agent averages a reward of 13 or more
-
+![Average scores output](docs/final_graph.jpg)
