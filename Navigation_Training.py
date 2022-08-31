@@ -3,8 +3,8 @@
 from unityagents import UnityEnvironment
 import agent
 import numpy as np
-import wandb
-wandb.init(project="DeepRL_bananaFinder", entity="nextflex") 
+# import wandb
+# wandb.init(project="DeepRL_bananaFinder", entity="nextflex") 
 
 env = UnityEnvironment(file_name="/Users/nathan/Documents/Learning/Udacity_deepRL/Value-based-methods/p1_navigation/Banana.app")
 
@@ -49,19 +49,19 @@ LR = 5e-4               # learning rate
 UPDATE_EVERY = 4        # how often to update the network
 
 
-wandb.init(config={
-    "num_episodes": num_episodes,
-    "max_timesteps": max_timesteps,
-    "epsilon_start": epsilon_start,
-    "epsilon_end": epsilon_end,
-    "epsilon_decay": epsilon_decay,
-    "buffer_size": BUFFER_SIZE, 
-    "batch_size": BATCH_SIZE,
-    "gamma": GAMMA,
-    "tau": TAU,
-    "learning_rate": LR,
-    "update_every": UPDATE_EVERY 
-})
+# wandb.init(config={
+#     "num_episodes": num_episodes,
+#     "max_timesteps": max_timesteps,
+#     "epsilon_start": epsilon_start,
+#     "epsilon_end": epsilon_end,
+#     "epsilon_decay": epsilon_decay,
+#     "buffer_size": BUFFER_SIZE, 
+#     "batch_size": BATCH_SIZE,
+#     "gamma": GAMMA,
+#     "tau": TAU,
+#     "learning_rate": LR,
+#     "update_every": UPDATE_EVERY 
+# })
 
 
 from collections import deque
@@ -114,7 +114,7 @@ def dqn(num_episodes, max_timestep, epsilon_start, epsilon_end, epsilon_decay):
         print('\rEpisode {}\tAverage Score: {:.2f}'.format(episode_num, np.mean(scores_window)), end="")
         if episode_num % 100 == 0:
             print('\rEpisode {}\tAverage Score: {:.2f}'.format(episode_num, np.mean(scores_window)))
-            wandb.log({"average_score": np.mean(scores_window)}) 
+            # wandb.log({"average_score": np.mean(scores_window)}) 
         if np.mean(scores_window)>=15.0:
             # If average scores across the current window of 100 scores is 200 or greater, we are done 
             print('\nEnvironment solved in {:d} episodes!\tAverage Score: {:.2f}'.format(episode_num-100, np.mean(scores_window)))
