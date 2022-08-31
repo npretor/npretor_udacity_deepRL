@@ -17,12 +17,12 @@ The output space is the the possible actions. There are 4 actions that can be ta
 ### Sequence of events 
 Initialize the network randomly. 
 For each episode 
-  Set score to zero
-  Choose an action 
-  Increment the environment based on that action
-  Add any reward to the episode score (-1, 0, or 1)
-  Save the experience and retrain the network every few time-steps. (state, action, reward, next_state, is_episode_done) 
-  break if we have reached the limit of our timesteps allowed in the episode
+1. Set score to zero
+2. Choose an action 
+3. Increment the environment based on that action
+4. Add any reward to the episode score (-1, 0, or 1)
+5. Save the experience and retrain the network every few time-steps. (state, action, reward, next_state, is_episode_done) 
+6. Break if we have reached the limit of our timesteps allowed in the episode, or if the environment says we are done
 
 
 ## Hyperparameters explanations 
