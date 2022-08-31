@@ -48,6 +48,6 @@ At a very basic level, we have to ask ourselves, how do we know we are moving to
 ### Epsilon value 
 The epsilon value determines the balance between exploring a new action, and staying with an existing action. This can also be framed from the perspective of the agent: Should I try for a new opportunity(explore) or should I stay with the current policy (exploit). It's always a tradeoff. Too much exploitation and the model never improves, too much exploration is resource intensive. 
 
-## Goal
+## Goal and results 
 The environment is considered to be solved when over a period of a hundred episodes the agent averages a reward of 13 or more
-![Average scores output](docs/final_graph.jpg)
+![Average scores output](results_magic-violet-19.jpg)
