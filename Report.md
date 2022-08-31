@@ -50,4 +50,4 @@ The epsilon value determines the balance between exploring a new action, and sta
 
 ## Goal and results 
 The environment is considered to be solved when over a period of a hundred episodes the agent averages a reward of 13 or more
-![Average scores output](results_magic-violet-19.jpg)
+![Average scores output](results_magic-violet-19.png)
