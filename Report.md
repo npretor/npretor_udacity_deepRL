@@ -49,5 +49,10 @@ At a very basic level, we have to ask ourselves, how do we know we are moving to
 The epsilon value determines the balance between exploring a new action, and staying with an existing action. This can also be framed from the perspective of the agent: Should I try for a new opportunity(explore) or should I stay with the current policy (exploit). It's always a tradeoff. Too much exploitation and the model never improves, too much exploration is resource intensive. 
 
 ## Goal and results 
-The environment is considered to be solved when over a period of a hundred episodes the agent averages a reward of 13 or more
+The environment is considered to be solved when over a period of a hundred episodes the agent averages a reward of 13 or more. 
+The below graph shows the results of the final model training. X axis is step values in hundreds of episodes. Y axis is average score per 100 episodes. 
+
+<b> The model reached an average score of 13 after traing for 400 episodes on the hyper-parameters chosen above  </b>
 ![Average scores output](results_magic-violet-19.png)
+
+![Weights and Biases model config page](wandb_output.png)
