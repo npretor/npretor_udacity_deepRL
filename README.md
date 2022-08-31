@@ -1,6 +1,6 @@
 # npretor_udacity_deepRL
 
-## This Deep Q network maps the 37 state spaces of the Unity environment to a best policy for choosing the 4 possible actions in the environment. More detail is given in the report. 
+## This Deep Q network maps the 37 state spaces of the Unity environment to a best policy for choosing the 4 possible actions in the environment. More detail is given in the [report](Report.md). 
 
 
 # 1. Installation 
