@@ -1,3 +1,5 @@
+# Much of this code was taken from the Unity example of a DQN agent for a moon lander using the OpenAI Gym
+
 import numpy as np
 import random
 from collections import namedtuple, deque
