@@ -1,9 +1,9 @@
-1. Network design 
+1. Learning algorithm and network design
 2. Hyperparameter explanations 
 3. Goal 
 4. Future work
 
-## Learning algorithm 
+## Learning algorithm and network design
 I chose a DQN - a deep Q network. A deep Q network is an optimal policy learning method utilizing a deep neural net. The network is essentially a policy estimator function mapping input states to actions. 
 
 My network design is comprised of fully connected network with ReLu between each layer. I experimented with changing layer sizes and adding an additional layer, but there was no discernable improvement on the performance (evaluated as average_reward over 100 episodes). 
@@ -13,6 +13,16 @@ The output space is the the possible actions. There are 4 actions that can be ta
 - move backwards 
 - move left 
 - move right 
+
+### Sequence of events 
+Initialize the network randomly. 
+For each episode 
+  Set score to zero
+  Choose an action 
+  Increment the environment based on that action
+  Add any reward to the episode score (-1, 0, or 1)
+  Save the experience and retrain the network every few time-steps. (state, action, reward, next_state, is_episode_done) 
+  break if we have reached the limit of our timesteps allowed in the episode
 
 
 ## Hyperparameters explanations 
