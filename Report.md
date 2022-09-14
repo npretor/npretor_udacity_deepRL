@@ -1,3 +1,4 @@
+## Sections
 1. Learning algorithm and network design
 2. Hyperparameter explanations 
 3. Goal 
