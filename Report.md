@@ -75,3 +75,6 @@ The below graph shows the results of the final model training. X axis is step va
 ## Future work
 Future work would mean a few improvements. First steps would be to 
 * Create a double DQN. Double DQNs are better at estimating the value of an action. This would mean creating two networks, one which has learned from the most recent experience replay, and one which decides what to do next based on the Q-value. This prevents bias that would be created normally from learning on the last set of experiences and choosing actions that favor on that learning a bit too much. 
+
+### Contributions
+* The majority of the code came from this Unity project: https://github.com/udacity/Value-based-methods. 
