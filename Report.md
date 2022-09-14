@@ -4,7 +4,7 @@
 3. Goal 
 4. Future work
 
-## Learning algorithm and network design
+## 1. Learning algorithm and network design
 I chose a DQN - a deep Q network. A deep Q network is an optimal policy learning method utilizing a deep neural net. The network is essentially a policy estimator function mapping input states to actions. 
 
 My network design is comprised of fully connected network with ReLu between each layer. I experimented with changing layer sizes and adding an additional layer, but there was no discernable improvement on the performance (evaluated as average_reward over 100 episodes). 
@@ -26,7 +26,7 @@ For each episode
 6. Break if we have reached the limit of our timesteps allowed in the episode, or if the environment says we are done
 
 
-## Hyperparameters explanations 
+## 2. Hyperparameters explanations 
 
 Final choices for hyperparameters: 
 - Replay buffer size: 10000 
@@ -68,12 +68,9 @@ The below graph shows the results of the final model training. X axis is step va
 ![Average scores output](media/results_magic-violet-19.png)
 ![Average scores output matplotlib](media/matplotilb_scores.png)
 
-
-
 ![Weights and Biases model config page](media/wandb_output.png)
 
-
-## Future work
+## 3. Future work
 Future work would mean a few improvements. First steps would be to 
 * Create a double DQN. Double DQNs are better at estimating the value of an action. This would mean creating two networks, one which has learned from the most recent experience replay, and one which decides what to do next based on the Q-value. This prevents bias that would be created normally from learning on the last set of experiences and choosing actions that favor on that learning a bit too much. 
 
